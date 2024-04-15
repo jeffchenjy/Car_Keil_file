@@ -1,0 +1,154 @@
+Configuration	Car_control
+STM32CubeMX 	6.10.0
+Date	02/22/2024
+MCU	STM32F072RBTx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+ADC	IN10	ADC_IN10	PC0
+ADC	IN11	ADC_IN11	PC1
+I2C1	I2C	I2C1_SCL	PB6
+I2C1	I2C	I2C1_SDA	PB7
+RCC	BYPASS Clock Source	RCC_OSC_IN	PF0-OSC_IN
+RCC	Crystal/Ceramic Resonator	RCC_OSC32_IN	PC14-OSC32_IN
+RCC	Crystal/Ceramic Resonator	RCC_OSC32_OUT	PC15-OSC32_OUT
+SYS	Serial_Wire	SYS_SWCLK	PA14
+SYS	Serial_Wire	SYS_SWDIO	PA13
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+TIM1	Input Capture direct mode	TIM1_CH1	PA8
+TIM1	Input Capture direct mode	TIM1_CH4	PA11
+TIM3	PWM Generation CH3	TIM3_CH3	PC8
+TIM3	PWM Generation CH4	TIM3_CH4	PC9
+TIM15	PWM Generation CH1	TIM15_CH1	PB14
+TIM16	Enable_Timer	TIM16_VS_ClockSourceINT	VP_TIM16_VS_ClockSourceINT
+USART1	Asynchronous	USART1_RX	PA10
+USART1	Asynchronous	USART1_TX	PA9
+USART2	Asynchronous	USART2_RX	PA3
+USART2	Asynchronous	USART2_TX	PA2
+USART3	Asynchronous	USART3_RX	PB11
+USART3	Asynchronous	USART3_TX	PB10
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+2	PC13	GPIO_EXTI13	B1 [Blue PushButton]
+3	PC14-OSC32_IN	RCC_OSC32_IN	
+4	PC15-OSC32_OUT	RCC_OSC32_OUT	
+5	PF0-OSC_IN	RCC_OSC_IN	
+6	PF1-OSC_OUT*	RCC_OSC_OUT	
+8	PC0	ADC_IN10	Sharp_left_ADC
+9	PC1	ADC_IN11	Sharp_right_ADC
+10	PC2	GPIO_Output	back_PING_Sensor_Trig
+11	PC3	GPIO_Output	DHT22_Sensor
+14	PA0	GPIO_Output	car_stby
+16	PA2	USART2_TX	USART2_TX
+17	PA3	USART2_RX	USART2_RX
+21	PA5	GPIO_Output	LD2 [Green Led]
+24	PC4	GPIO_Output	car_ain1
+25	PC5	GPIO_Output	car_ain2
+28	PB2	GPIO_Output	front_PING_Sensor_Trig
+29	PB10	USART3_TX	
+30	PB11	USART3_RX	
+35	PB14	TIM15_CH1	servo_motor
+37	PC6	GPIO_Output	car_bin1
+38	PC7	GPIO_Output	car_bin2
+39	PC8	TIM3_CH3	
+40	PC9	TIM3_CH4	
+41	PA8	TIM1_CH1	back_PING_Sensor_Echo
+42	PA9	USART1_TX	BT_TX
+43	PA10	USART1_RX	BT_RX
+44	PA11	TIM1_CH4	front_PING_Sensor_Echo
+46	PA13	SYS_SWDIO	TMS
+49	PA14	SYS_SWCLK	TCK
+51	PC10	GPIO_EXTI10	MH_sensor_left
+52	PC11	GPIO_EXTI11	MH_sensor_right
+58	PB6	I2C1_SCL	I2C2_SCL_LCD
+59	PB7	I2C1_SDA	I2C2_SDA_LCD
+PERIPHERALS	MODES	FUNCTIONS	PINS
+ADC	IN10	ADC_IN10	PC0
+ADC	IN11	ADC_IN11	PC1
+I2C1	I2C	I2C1_SCL	PB6
+I2C1	I2C	I2C1_SDA	PB7
+RCC	BYPASS Clock Source	RCC_OSC_IN	PF0-OSC_IN
+RCC	Crystal/Ceramic Resonator	RCC_OSC32_IN	PC14-OSC32_IN
+RCC	Crystal/Ceramic Resonator	RCC_OSC32_OUT	PC15-OSC32_OUT
+SYS	Serial_Wire	SYS_SWCLK	PA14
+SYS	Serial_Wire	SYS_SWDIO	PA13
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+TIM1	Input Capture direct mode	TIM1_CH1	PA8
+TIM1	Input Capture direct mode	TIM1_CH4	PA11
+TIM3	PWM Generation CH3	TIM3_CH3	PC8
+TIM3	PWM Generation CH4	TIM3_CH4	PC9
+TIM15	PWM Generation CH1	TIM15_CH1	PB14
+TIM16	Enable_Timer	TIM16_VS_ClockSourceINT	VP_TIM16_VS_ClockSourceINT
+USART1	Asynchronous	USART1_RX	PA10
+USART1	Asynchronous	USART1_TX	PA9
+USART2	Asynchronous	USART2_RX	PA3
+USART2	Asynchronous	USART2_TX	PA2
+USART3	Asynchronous	USART3_RX	PB11
+USART3	Asynchronous	USART3_TX	PB10
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+2	PC13	GPIO_EXTI13	B1 [Blue PushButton]
+3	PC14-OSC32_IN	RCC_OSC32_IN	
+4	PC15-OSC32_OUT	RCC_OSC32_OUT	
+5	PF0-OSC_IN	RCC_OSC_IN	
+6	PF1-OSC_OUT*	RCC_OSC_OUT	
+8	PC0	ADC_IN10	Sharp_left_ADC
+9	PC1	ADC_IN11	Sharp_right_ADC
+10	PC2	GPIO_Output	back_PING_Sensor_Trig
+11	PC3	GPIO_Output	DHT22_Sensor
+14	PA0	GPIO_Output	car_stby
+16	PA2	USART2_TX	USART2_TX
+17	PA3	USART2_RX	USART2_RX
+21	PA5	GPIO_Output	LD2 [Green Led]
+24	PC4	GPIO_Output	car_ain1
+25	PC5	GPIO_Output	car_ain2
+28	PB2	GPIO_Output	front_PING_Sensor_Trig
+29	PB10	USART3_TX	
+30	PB11	USART3_RX	
+35	PB14	TIM15_CH1	servo_motor
+37	PC6	GPIO_Output	car_bin1
+38	PC7	GPIO_Output	car_bin2
+39	PC8	TIM3_CH3	
+40	PC9	TIM3_CH4	
+41	PA8	TIM1_CH1	back_PING_Sensor_Echo
+42	PA9	USART1_TX	BT_TX
+43	PA10	USART1_RX	BT_RX
+44	PA11	TIM1_CH4	front_PING_Sensor_Echo
+46	PA13	SYS_SWDIO	TMS
+49	PA14	SYS_SWCLK	TCK
+51	PC10	GPIO_EXTI10	MH_sensor_left
+52	PC11	GPIO_EXTI11	MH_sensor_right
+58	PB6	I2C1_SCL	I2C2_SCL_LCD
+59	PB7	I2C1_SDA	I2C2_SDA_LCD
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : Car_control
+Project Folder : D:\M0\M0_project\Car_control
+Toolchain / IDE : MDK-ARM V5.32
+Firmware Package Name and Version : STM32Cube FW_F0 V1.11.4
+
+
+Code Generation Settings : 
+STM32Cube MCU packages and embedded software packs : Copy all used libraries into the project folder
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : No
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : 
+
+
+
+
+
